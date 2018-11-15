@@ -3,7 +3,7 @@ package file
 import "testing"
 
 func TestReadFileValid(t *testing.T) {
-	lines, err := ReadFile("file.txt")
+	lines, err := ReadFile("reader_test.txt")
 	if err != nil {
 		t.Errorf("Error returned: %s", err)
 	}
